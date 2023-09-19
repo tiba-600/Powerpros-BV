@@ -1,0 +1,73 @@
+:root {
+    --background-color: black;
+    --color: white;
+    --header: rgba(132, 150, 162, 1);
+  }
+  
+  @font-face {
+    font-family: main-font;
+    src: url("../fonts/Gentsefeestenfonts/stolzl/Stolzl-Regular.ttf") format("truetype");
+  }
+  
+  @font-face {
+    font-family: main-font-bold;
+    src: url("../fonts/Gentsefeestenfonts/stolzl/Stolzl-Bold.ttf") format("woff");
+  }
+  
+  @font-face {
+    font-family: main-font-medium;
+    src: url("../fonts/Gentsefeestenfonts/stolzl/Stolzl-Medium.ttf") format("woff");
+  }
+  
+  * {
+    //font-family: 'poppins', 'sans-serif';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--header);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo{
+    text-decoration: none;
+    color: var(--background-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+   color: var(--color);
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+}
+
+section {
+    padding: 100px 200px;
+}
+
+.text-text {
+    margin-top: 4.50rem;
+}
+
